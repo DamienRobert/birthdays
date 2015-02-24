@@ -8,19 +8,33 @@
 
 ## Description
 
-TODO: Description
+Show the birthdays in a time period so you don't forget them!
 
 ## Features
 
+Use a wrapper around Chronic so that the time specification is quite
+powerful.
+
 ## Examples
 
-    require 'birthdays'
+By default use the file ~/.birthdays.yaml, that you can fill like:
 
-## Requirements
+    "Father's Day": "3rd Sunday in June"
+    "Christmas": "25 December"
+    "New Year": "01 January"
+    "John Doe": 1970-01-01
+
+Then to see the birthdays for next week just use
+
+    birthdays 'now..in 7 days'
 
 ## Install
 
     $ gem install birthdays
+
+## Synopsis
+
+    $ birthdays time..period
 
 ## Copyright
 

@@ -1,0 +1,37 @@
+#!/usr/bin/env ruby
+require 'birthdays'
+
+if __FILE__ == $0
+	require "optparse"
+	opts={file: "#{ENV['HOME']}/.birthdays.yaml"}
+	optparse = OptionParser.new do |opt|
+		opt.banner = "Output coming birthdays"
+		opt.on("--file=FILE", "Birthdays file") do |v| opts[:file]=v end
+		opt.on("--[no-]age", "Switch to age mode") do |v| opts[:age]=v end
+		opt.on("--[no-]crontab", "When run under a crontab") do |v| opts[:crontab]=v end
+	end
+	optparse.parse!
+
+	persons=YAML.load_file(opts[:file]).map do |name,bday|
+		Person.new(name,bday)
+	end
+
+	args=ARGV
+	args=[Time.now] if args.empty?
+	if opts[:age]
+		args.each do |today|
+			today = DR::TimeParse.parse(today)
+			puts "On #{today}, the ages are", persons.map {|i| "- #{i.to_s(today)} [#{i.age(today)}]"}
+		end
+	else
+		args.each do |today|
+			today = DR::TimeParse.parse(today)
+			personsbday = persons.select {|p| p.birthday?(today)}.sort
+			unless personsbday.empty?
+				puts "On #{today}, the birthdays are", personsbday.map {|i| "- #{i.to_s(today)}"}
+				exit 1 if opts[:crontab] #generate a mail report
+			end
+		end
+	end
+end
+

@@ -1,6 +1,6 @@
 name: birthdays
-summary: "TODO: Summary"
-description: "TODO: Description"
+summary: "Birthdays reminder"
+description: "Show the birthdays in a time period so you don't forget them!"
 license: MIT
 authors: Damien Robert
 email: Damien.Olivier.Robert+gems@gmail.com
