@@ -1,7 +1,7 @@
 require 'birthdays/version'
 
 require 'yaml'
-require 'dr/parse/timeparse'
+require 'dr/parse/time_parse'
 
 class Person
 	attr_accessor :name, :bday, :ybday
