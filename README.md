@@ -38,6 +38,6 @@ Then to see the birthdays for next week just use
 
 ## Copyright
 
-Copyright © 2015 Damien Robert
+Copyright © 2015–2016 Damien Robert
 
 MIT License. See {file:LICENSE.txt} for details.
