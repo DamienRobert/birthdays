@@ -8,6 +8,9 @@ homepage: https://github.com/DamienRobert/birthdays#readme
 
 dependencies:
   drain: ~> 0.1
+  chronic: ~> 0.1
+  chronic_duration: ~> 0.1
+  activesupport: ~> 5.0
 development_dependencies:
   minitest: "~> 5.0"
   rake: "~> 10"
