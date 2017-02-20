@@ -1,10 +1,12 @@
 # birthdays
 
 * [Homepage](https://github.com/DamienRobert/birthdays#readme)
-* [Gems]("https://rubygems.org/gems/birthdays)
 * [Issues](https://github.com/DamienRobert/birthdays/issues)
-* [Documentation](http://rubydoc.info/gems/birthdays/frames)
+* [Documentation](http://rubydoc.info/gems/birthdays)
 * [Email](mailto:Damien.Olivier.Robert+gems at gmail.com)
+
+[![Gem Version](https://img.shields.io/gem/v/birthdays.svg)](https://rubygems.org/gems/birthdays)
+[![Build Status](https://travis-ci.org/DamienRobert/birthdays.svg?branch=master)](https://travis-ci.org/DamienRobert/birthdays)
 
 ## Description
 
@@ -40,4 +42,4 @@ Then to see the birthdays for next week just use
 
 Copyright © 2015–2016 Damien Robert
 
-MIT License. See {file:LICENSE.txt} for details.
+MIT License. See [LICENSE.txt](./LICENSE.txt) for details.

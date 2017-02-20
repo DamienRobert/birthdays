@@ -1,1 +1,6 @@
---markup markdown -M kramdown --title "birthdays Documentation" --protected
+--markup markdown
+--title "birthdays Documentation"
+--protected
+-
+ChangeLog.md
+LICENSE.txt
