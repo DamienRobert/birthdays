@@ -3,7 +3,7 @@
 * [Homepage](https://github.com/DamienRobert/birthdays#readme)
 * [Issues](https://github.com/DamienRobert/birthdays/issues)
 * [Documentation](http://rubydoc.info/gems/birthdays)
-* [Email](mailto:Damien.Olivier.Robert+gems at gmail.com)
+* [Email](mailto:Damien.Olivier.Robert+gems@gmail.com)
 
 [![Gem Version](https://img.shields.io/gem/v/birthdays.svg)](https://rubygems.org/gems/birthdays)
 [![Build Status](https://travis-ci.org/DamienRobert/birthdays.svg?branch=master)](https://travis-ci.org/DamienRobert/birthdays)
@@ -32,14 +32,12 @@ Then to see the birthdays for next week just use
 
 ## Install
 
+    ~~~ sh
     $ gem install birthdays
-
-## Synopsis
-
-    $ birthdays time..period
+    ~~~
 
 ## Copyright
 
 Copyright © 2015–2017 Damien Robert
 
-MIT License. See [LICENSE.txt](./LICENSE.txt) for details.
+MIT License. See [`LICENSE.txt`](LICENSE.txt) for details.

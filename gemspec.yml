@@ -7,12 +7,10 @@ email: Damien.Olivier.Robert+gems@gmail.com
 homepage: https://github.com/DamienRobert/birthdays#readme
 
 dependencies:
-  drain: ~> 0.1
+  drain: ~> 0.6
   chronic: ~> 0.1
   chronic_duration: ~> 0.1
   activesupport: ~> 5.0
 development_dependencies:
   minitest: "~> 5.0"
-  rake: "~> 10"
-  rubygems-tasks: "~> 0.2"
-  yard: "~> 0.8"
+  rake: ">= 10.0"
